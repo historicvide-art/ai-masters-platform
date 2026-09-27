@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --ink: #07111f; --muted: #667085; --paper: #f6f8fb; --blue: #2864ff; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+::selection { background: #b8d0ff; color: #07111f; }
+.grid-bg { background-image: linear-gradient(rgba(40,100,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(40,100,255,.06) 1px, transparent 1px); background-size: 48px 48px; }
+.display { letter-spacing: -.075em; line-height: .91; }
+.glow { box-shadow: 0 0 100px rgba(53,112,255,.22); }
