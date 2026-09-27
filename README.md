@@ -2,34 +2,37 @@
 
 A premium, cutting-edge website for NEXIAL, an elite AI master's programme built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
-## Features
+## ✨ Features
 
-✨ **Premium Design**
-- Dark mode futuristic UI
-- Gradient typography and animations
-- Fully responsive (mobile, tablet, desktop)
-- Smooth scroll and page transitions
+### Premium Design
+- Dark mode futuristic UI with gradient effects
+- Smooth animations and transitions (Framer Motion)
+- Fully responsive design (mobile, tablet, desktop)
+- Optimized performance and accessibility
 
-🎯 **Key Pages**
-- **Homepage**: Hero, programme overview, research, faculty, admissions
-- **Curriculum**: 6-module learning roadmap
-- **Admissions**: Functional application form with validation
+### Pages
+- **Homepage** (`/`): Hero section, programme overview, specializations, research section, faculty, and admissions CTA
+- **Curriculum** (`/curriculum`): 6-module learning roadmap with detailed module descriptions
+- **Admissions** (`/admissions`): Fully functional application form with validation, error handling, and success states
 
-⚡ **Technical Stack**
-- Next.js 14 (App Router)
-- TypeScript
-- Tailwind CSS
-- Framer Motion (animations)
-- React Icons
-- Form validation
+### Technical Stack
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript (strict mode)
+- **Styling**: Tailwind CSS 3.4
+- **Animations**: Framer Motion 10.16
+- **Icons**: React Icons 4.12
+- **Form Validation**: Client-side validation with error states
 
-🔒 **Performance & SEO**
-- Optimized images and lazy loading
-- SEO metadata and Open Graph tags
-- Accessibility-first (ARIA labels, semantic HTML)
-- Production-ready build
+### Performance & Production-Ready
+- ✅ Clean TypeScript compilation (strict mode enabled)
+- ✅ SEO optimized (metadata, Open Graph tags)
+- ✅ Accessibility first (ARIA labels, semantic HTML, focus management)
+- ✅ Mobile-first responsive design
+- ✅ Form validation with real-time feedback
+- ✅ Success/error states for user feedback
+- ✅ Vercel deployment ready
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js 18+
@@ -44,77 +47,95 @@ npm install
 # Start development server
 npm run dev
 
-# Open browser
-# Visit http://localhost:3000
+# Open http://localhost:3000
 ```
 
-### Production Build
+### Production Build & Testing
 
 ```bash
 # Build for production
 npm run build
 
-# Start production server
+# Run production server locally
 npm start
 
 # Type checking
 npm run type-check
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 src/
 ├── app/
-│   ├── layout.tsx        # Root layout with metadata
-│   ├── page.tsx          # Homepage
-│   ├── globals.css       # Global styles
-│   ├── curriculum/       # Curriculum page
-│   └── admissions/       # Admissions page with form
-├── components/           # Reusable components
-└── lib/                  # Utilities
+│   ├── layout.tsx           # Root layout with SEO metadata
+│   ├── page.tsx             # Homepage with all sections
+│   ├── globals.css          # Global styles and custom animations
+│   ├── curriculum/
+│   │   └── page.tsx         # Curriculum page with modules
+│   └── admissions/
+│       └── page.tsx         # Admissions form with validation
+├── next.config.js           # Next.js configuration
+├── tailwind.config.ts       # Tailwind CSS configuration
+├── tsconfig.json            # TypeScript strict configuration
+├── package.json             # Dependencies and scripts
+└── vercel.json              # Vercel deployment configuration
 ```
 
-## Deployment
+## 🌐 Deployment
 
-### Vercel (Recommended)
+### Vercel (One-Click Deploy)
+
+1. Push to GitHub
+2. Connect repository to Vercel
+3. Deploy (automatic build & deployment)
 
 ```bash
-# Push to GitHub
-git add .
-git commit -m "Deploy to Vercel"
-git push origin main
-
-# Deploy via Vercel CLI
+# Via Vercel CLI
 vercel
 ```
 
-### Environment Variables
+### Environment Variables (Optional)
 
-Create `.env.local` (optional for API endpoints):
+Create `.env.local` if needed:
 
 ```
 NEXT_PUBLIC_API_URL=https://your-api.com
 ```
 
-## Browser Support
+## ✅ Quality Checklist
+
+- [x] TypeScript strict mode enabled
+- [x] No unused variables or imports
+- [x] No implicit any types
+- [x] All pages render correctly
+- [x] Navigation links work on all pages
+- [x] Forms validate input properly
+- [x] Mobile responsive design tested
+- [x] Animations smooth and performant
+- [x] SEO metadata optimized
+- [x] Accessibility (ARIA, semantic HTML)
+- [x] Production build passes without errors
+- [x] Ready for Vercel deployment
+
+## 🎯 Browser Support
 
 - Chrome/Edge (latest)
 - Firefox (latest)
 - Safari (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+- Mobile: iOS Safari, Chrome Mobile
 
-## Performance Metrics
+## 📊 Performance Targets
 
 - Lighthouse Score: 95+
-- Core Web Vitals: Optimized
 - First Contentful Paint: < 1.5s
 - Cumulative Layout Shift: < 0.1
+- Time to Interactive: < 2.5s
 
-## License
+## 📝 License
 
 MIT © 2026 NEXIAL Institute
 
-## Support
+## 📞 Contact
 
-For issues or inquiries, contact: admissions@nexial.ai
+For inquiries: admissions@nexial.ai
